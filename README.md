@@ -1,9 +1,8 @@
 # Maurao Method
 
 [![CI](https://github.com/luismpenholato/maurao-method/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/luismpenholato/maurao-method/actions/workflows/ci.yml)
-[![Release](https://github.com/luismpenholato/maurao-method/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/luismpenholato/maurao-method/actions/workflows/release.yml)
+[![GitHub release](https://img.shields.io/github/v/release/luismpenholato/maurao-method?display_name=tag&sort=semver)](https://github.com/luismpenholato/maurao-method/releases)
 [![npm version](https://img.shields.io/npm/v/maurao-method.svg)](https://www.npmjs.com/package/maurao-method)
-[![npm downloads](https://img.shields.io/npm/dm/maurao-method.svg)](https://www.npmjs.com/package/maurao-method)
 [![License](https://img.shields.io/npm/l/maurao-method.svg)](https://opensource.org/license/mit/)
 
 ## Modular engineering for AI-assisted software development
