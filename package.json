@@ -1,0 +1,44 @@
+{
+  "name": "maurao-method",
+  "version": "0.1.0",
+  "description": "Portable specification-driven engineering method and skills for AI coding agents",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luismpenholato/maurao-method.git"
+  },
+  "homepage": "https://github.com/luismpenholato/maurao-method#readme",
+  "bugs": {
+    "url": "https://github.com/luismpenholato/maurao-method/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "type": "module",
+  "bin": {
+    "maurao": "bin/maurao.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "GEMINI.md",
+    ".clinerules",
+    ".cursor",
+    ".github",
+    ".maurao",
+    "bin",
+    "commands",
+    "docs",
+    "skills",
+    "technology-packs",
+    "templates"
+  ],
+  "scripts": {
+    "validate": "node bin/maurao.mjs validate",
+    "list": "node bin/maurao.mjs list",
+    "test": "node --test"
+  },
+  "license": "MIT"
+}
