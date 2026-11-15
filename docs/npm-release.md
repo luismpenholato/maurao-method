@@ -4,7 +4,7 @@ The repository has three GitHub Actions workflows:
 
 - `ci.yml`: validates pushes and pull requests.
 - `publish.yml`: provides an optional manual OIDC publish path.
-- `release-on-main.yml`: increments the patch version, publishes, tags, and creates a GitHub Release after package changes reach `main`.
+- `release.yml`: increments the patch version, publishes, tags, and creates a GitHub Release after package changes reach `main`.
 
 ## One-time setup
 

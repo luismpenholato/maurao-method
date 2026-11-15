@@ -1,7 +1,7 @@
 # Maurao Method
 
 [![CI](https://github.com/luismpenholato/maurao-method/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/luismpenholato/maurao-method/actions/workflows/ci.yml)
-[![Release](https://github.com/luismpenholato/maurao-method/actions/workflows/release-on-main.yml/badge.svg?branch=main)](https://github.com/luismpenholato/maurao-method/actions/workflows/release-on-main.yml)
+[![Release](https://github.com/luismpenholato/maurao-method/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/luismpenholato/maurao-method/actions/workflows/release.yml)
 [![npm version](https://img.shields.io/npm/v/maurao-method.svg)](https://www.npmjs.com/package/maurao-method)
 [![npm downloads](https://img.shields.io/npm/dm/maurao-method.svg)](https://www.npmjs.com/package/maurao-method)
 [![License](https://img.shields.io/npm/l/maurao-method.svg)](https://opensource.org/license/mit/)
