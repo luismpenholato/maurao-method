@@ -97,4 +97,8 @@ jobs:
             fi
             sleep 2
           done
-          gh release create "${TAG}" --verify-tag "${TAG}" --title "${TAG}" --generate-notes
+          gh api --method POST "repos/${GH_REPOSITORY}/releases" \
+            -f "tag_name=${TAG}" \
+            -f "target_commitish=${GITHUB_SHA}" \
+            -f "name=${TAG}" \
+            -F generate_release_notes=true
