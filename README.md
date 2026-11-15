@@ -1,6 +1,24 @@
 # Maurao Method
 
+[![CI](https://github.com/luismpenholato/maurao-method/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/luismpenholato/maurao-method/actions/workflows/ci.yml)
+[![Release](https://github.com/luismpenholato/maurao-method/actions/workflows/release-on-main.yml/badge.svg?branch=main)](https://github.com/luismpenholato/maurao-method/actions/workflows/release-on-main.yml)
+[![npm version](https://img.shields.io/npm/v/maurao-method.svg)](https://www.npmjs.com/package/maurao-method)
+[![npm downloads](https://img.shields.io/npm/dm/maurao-method.svg)](https://www.npmjs.com/package/maurao-method)
+[![License](https://img.shields.io/npm/l/maurao-method.svg)](https://opensource.org/license/mit/)
+
 ## Modular engineering for AI-assisted software development
+
+Install the latest published package from [npm](https://www.npmjs.com/package/maurao-method):
+
+```powershell
+npm install --global maurao-method
+```
+
+Then install the method into a project:
+
+```powershell
+maurao init . --tool all
+```
 
 Maurao Method is a technology-agnostic engineering method for building reliable software with AI agents.
 

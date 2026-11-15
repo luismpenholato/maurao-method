@@ -1,9 +1,7 @@
-name: Publish npm package
+name: Manual npm publish
 
 on:
-  push:
-    tags:
-      - 'v*.*.*'
+  workflow_dispatch:
 
 permissions:
   contents: read

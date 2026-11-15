@@ -3,7 +3,7 @@
 The repository has three GitHub Actions workflows:
 
 - `ci.yml`: validates pushes and pull requests.
-- `publish.yml`: publishes only version tags matching `v*.*.*`.
+- `publish.yml`: provides an optional manual OIDC publish path.
 - `release-on-main.yml`: increments the patch version, publishes, tags, and creates a GitHub Release after package changes reach `main`.
 
 ## One-time setup
@@ -54,7 +54,9 @@ npm version minor
 npm version major
 ```
 
-The tag starts `publish.yml`. GitHub Actions validates the package again and publishes it to npm through Trusted Publishing.
+The release workflow pushes an annotated version tag and creates the GitHub Release after publication. The tag does not trigger a second npm publication.
+
+For the optional tokenless path, run `publish.yml` manually after configuring npm Trusted Publishing for the repository and workflow.
 
 ## Local checks
 
