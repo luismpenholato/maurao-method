@@ -83,5 +83,18 @@ jobs:
       - name: Create GitHub Release
         env:
           GH_TOKEN: ${{ github.token }}
+          GH_REPOSITORY: ${{ github.repository }}
           VERSION: ${{ steps.version.outputs.version }}
-        run: gh release create "v${VERSION}" --verify-tag "v${VERSION}" --title "v${VERSION}" --generate-notes
+        run: |
+          TAG="v${VERSION}"
+          for attempt in 1 2 3 4 5 6; do
+            if gh api "repos/${GH_REPOSITORY}/git/ref/tags/${TAG}" > /dev/null 2>&1; then
+              break
+            fi
+            if [ "$attempt" -eq 6 ]; then
+              echo "Tag ${TAG} was not visible through the GitHub API after pushing it."
+              exit 1
+            fi
+            sleep 2
+          done
+          gh release create "${TAG}" --verify-tag "${TAG}" --title "${TAG}" --generate-notes
